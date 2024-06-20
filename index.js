@@ -1,4 +1,4 @@
-require('./keep_alive.js');
+
 const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 const sqlite3 = require('sqlite3').verbose();
@@ -520,4 +520,12 @@ bot.onText(/\/cut @(\w+) (\d+)/, (msg, match) => {
         bot.sendMessage(chatId, `You are not authorized to use this command.`);
     }
 });
+
+var http = require('http');
+http.createServer(function (req, res) {
+res.write("I'm alive");
+res.end();
+}).listen(8080);
+
+
 console.log('Bot is running...');
