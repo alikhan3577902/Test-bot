@@ -97,10 +97,6 @@ bot.onText(/\/start(?:\s+(\d+))?/, (msg, match) => {
                     { text: 'ᗩᑕ丅Ꭵᐯᗴ', url: 'https://t.me/teamali_support' }
                 ],
                 [
-                    { text: 'ᗩᑕ丅Ꭵᐯᗴ', url: 'https://t.me/TeAm_Ali_1' },
-                    { text: 'ᗩᑕ丅Ꭵᐯᗴ', url: 'https://t.me/SeekhoTricks' }
-                ],
-                [
                     { text: '💴 ᗩᑕ丅Ꭵᐯᗩ丅ᗴ 💶', callback_data: 'check_join' }
                 ]
             ]
